@@ -1,3 +1,25 @@
+This one actually includes other libraries. They might be out of date but it works.
+
+Only supports Windows at the moment.
+
+To build
+```
+dotnet build
+```
+
+To package as NuGet package
+```
+dotnet pack
+```
+
+Then to install
+```
+nuget add .\Reyuu.SDL2-CS.1.0.0.nupkg -Source "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages"
+```
+If your configuration stores the packages somewhere else, update the `Source` argument accordingly.
+
+-----------
+
 This is SDL2#, a C# wrapper for SDL2.
 
 Project Website: https://github.com/flibitijibibo/SDL2-CS

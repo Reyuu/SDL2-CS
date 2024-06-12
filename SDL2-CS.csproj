@@ -12,11 +12,11 @@
         <EnableAOTAnalyzer>true</EnableAOTAnalyzer>
     </PropertyGroup>
     <PropertyGroup Label="NuGet">
-        <Authors>ppy Pty Ltd &amp; flibitijibibo</Authors>
+        <Authors>ppy Pty Ltd &amp; flibitijibibo &amp; Reyuu</Authors>
         <Title>SDL2#</Title>
-        <PackageId>ppy.SDL2-CS</PackageId>
-        <PackageProjectUrl>https://github.com/ppy/SDL2-CS</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/ppy/SDL2-CS</RepositoryUrl>
+        <PackageId>Reyuu.SDL2-CS</PackageId>
+        <PackageProjectUrl>https://github.com/Reyuu/SDL2-CS</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Reyuu/SDL2-CS</RepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
         <Content Include="$(MSBuildThisFileDirectory)native\win-x64\*.dll">
@@ -59,6 +59,13 @@
             <PackagePath>runtimes/ios/native</PackagePath>
             <Pack>true</Pack>
         </Content>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Remove="E:\programming\C#\SDL2-CS\native\linux-x64\libSDL2.so" />
+      <Content Remove="E:\programming\C#\SDL2-CS\native\linux-x86\libSDL2.so" />
+      <Content Remove="E:\programming\C#\SDL2-CS\native\osx-arm64\libSDL2.dylib" />
+      <Content Remove="E:\programming\C#\SDL2-CS\native\osx-x64\libSDL2.dylib" />
+      <Content Remove="E:\programming\C#\SDL2-CS\native\win-arm64\SDL2.dll" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="app.config">
