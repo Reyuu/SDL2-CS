@@ -19,7 +19,7 @@
         <RepositoryUrl>https://github.com/ppy/SDL2-CS</RepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
-        <Content Include="$(MSBuildThisFileDirectory)native\win-x64\SDL2.dll">
+        <Content Include="$(MSBuildThisFileDirectory)native\win-x64\*.dll">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             <PackagePath>runtimes/win-x64/native</PackagePath>
             <Pack>true</Pack>
@@ -29,7 +29,7 @@
             <PackagePath>runtimes/win-arm64/native</PackagePath>
             <Pack>true</Pack>
         </Content>
-        <Content Include="$(MSBuildThisFileDirectory)native\win-x86\SDL2.dll">
+        <Content Include="$(MSBuildThisFileDirectory)native\win-x86\*.dll">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             <PackagePath>runtimes/win-x86/native</PackagePath>
             <Pack>true</Pack>
