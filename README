@@ -1,4 +1,4 @@
-This one actually includes other libraries. They might be out of date but it works.
+This one actually includes other libraries (SDL2_gfx, SDL2_image, SDL2_mixer and SDL2_ttf). They might be out of date but it works.
 
 Only supports Windows at the moment.
 
@@ -18,7 +18,10 @@ nuget add .\Reyuu.SDL2-CS.1.0.0.nupkg -Source "C:\\Program Files (x86)\\Microsof
 ```
 If your configuration stores the packages somewhere else, update the `Source` argument accordingly.
 
+The native DLLs are taken directly from SDL repositories, I've included licenses for transparency.
+
 -----------
+```
 
 This is SDL2#, a C# wrapper for SDL2.
 
@@ -63,3 +66,4 @@ names threads with the 0x406D1388 exception will silently exit. To prevent this
 exception from being thrown by SDL, add this line before your SDL_Init call:
 
 SDL.SDL_SetHint(SDL.SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING, "1");
+```
